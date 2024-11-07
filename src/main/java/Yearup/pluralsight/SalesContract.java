@@ -9,8 +9,9 @@ public class SalesContract extends Contract
     private double processingFee;
     private boolean financeOption;
 
-    public SalesContract(String date, String customerName, String customerEmail, Vehicle vehicleSold,Vehicle vehicle, boolean financeOption) {
-        super(date, customerName, customerEmail, vehicleSold, vehicle);
+    public SalesContract(String date, String customerName, String customerEmail, Vehicle vehicleSold, Vehicle vehicle, boolean financeOption) {
+        super(date, customerName, customerEmail, vehicle);
+        this.setVehicleSold(vehicleSold);
         this.financeOption = financeOption;
     }
 
@@ -18,6 +19,7 @@ public class SalesContract extends Contract
         super(customerName, customerEmail, vehicle);
         this.financeOption = financeOption;
     }
+
     public double getSalesTax() {
         return salesTax;
     }
@@ -86,14 +88,16 @@ public class SalesContract extends Contract
         }
     }
 
-    public static SalesContract createSalesContract(Vehicle vehicle, String customerName, String customerEmail)
-    {
+    public static SalesContract createSalesContract(Vehicle vehicle, String customerName, String customerEmail) {
         Scanner scanner = new Scanner(System.in);
+
+        Vehicle vehicleSold = vehicle;
 
         System.out.println("Would you like to finance? (yes/no): ");
         boolean financeOption = scanner.nextLine().equalsIgnoreCase("yes");
 
-        return new SalesContract(customerName, customerEmail, vehicle, financeOption);
-    }
+        String date = java.time.LocalDate.now().toString();
 
+        return new SalesContract(date, customerName, customerEmail, vehicleSold, vehicle, financeOption);
+    }
 }

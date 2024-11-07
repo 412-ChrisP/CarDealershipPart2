@@ -10,12 +10,24 @@ public abstract class Contract
     public double totalPrice;
     public double monthlyPayment;
 
-    public Contract(String date, String customerName, String customerEmail, Vehicle vehicleSold,Vehicle vehicle)
-    {
+    public Contract(String date, String customerName, String customerEmail, Vehicle vehicleSold, Vehicle vehicle) {
         this.date = date;
         this.customerName = customerName;
         this.customerEmail = customerEmail;
-        this.vehicle = vehicleSold;
+        this.vehicleSold = vehicleSold;
+        this.vehicle = vehicle;
+    }
+
+    public Contract(String customerName, String customerEmail, Vehicle vehicle) {
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.vehicle = vehicle;
+    }
+
+    public Contract(String date, String customerName, String customerEmail, Vehicle vehicle) {
+        this.date = date;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
         this.vehicle = vehicle;
     }
 

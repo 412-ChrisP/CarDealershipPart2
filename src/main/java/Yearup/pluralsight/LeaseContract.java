@@ -7,16 +7,13 @@ public class LeaseContract extends Contract
     private double monthlyPayment;
     private double expectedEndingValue;
 
-    public LeaseContract(String date, String customerName, String customerEmail, Vehicle vehicleSold, Vehicle vehicle) {
-        super(date, customerName, customerEmail, vehicleSold, vehicle);
+    public LeaseContract(String date, String customerName, String customerEmail, Vehicle vehicle)
+    {
+        super(date, customerName, customerEmail, vehicle);
     }
 
-    public LeaseContract(String customerName, String customerEmail, Vehicle vehicle) {
-        super(customerName, customerEmail, vehicle);
-    }
-
-    public static LeaseContract createLeaseContract(Vehicle vehicle, String customerName, String customerEmail) {
-        return new LeaseContract(customerName, customerEmail, vehicle);
+    public static LeaseContract createLeaseContract(Vehicle vehicle, String customerName, String customerEmail, String date) {
+        return new LeaseContract(date, customerName, customerEmail, vehicle);
     }
 
     public double getExpectedEndingValue() {
@@ -49,7 +46,7 @@ public class LeaseContract extends Contract
 
     @Override
     public double getTotalPrice() {
-        return (getVehicle().getPrice() - expectedEndingValue) + leaseFee;
+        return (super.getVehicle().getPrice() - expectedEndingValue) + leaseFee;
     }
 
     @Override

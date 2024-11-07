@@ -2,6 +2,7 @@ package Yearup.pluralsight;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.*;
 
 public class UserInterface
 {
@@ -14,7 +15,7 @@ public class UserInterface
 
         System.out.println("Please enter the VIN: ");
         int vin = Integer.parseInt(scanner.nextLine());
-        Vehicle vehicle = (Vehicle) dealership.getVehicleByVin(vin);
+        Vehicle vehicle = dealership.getVehicleByVin(vin);
 
         System.out.println("Enter customer name: ");
         String customerName = scanner.nextLine();
@@ -26,18 +27,20 @@ public class UserInterface
 
         Contract contract;
 
-        if (contractType.equals("s"))
+        if (contractType.equals("s") || contractType.equals("sale"))
         {
+            String date = java.time.LocalDate.now().toString();
             contract = SalesContract.createSalesContract(vehicle, customerName, customerEmail);
         }
-        else if (contractType.equals("l"))
+        else if (contractType.equals("l") || contractType.equals("lease"))
         {
             if (vehicle.getYear() < 2021)
             {
                 System.out.println("Vehicle life > 3 years. Choose different vehicle!");
                 return;
             }
-            contract = LeaseContract.createLeaseContract(vehicle, customerName, customerEmail);
+            String date = java.time.LocalDate.now().toString();
+            contract = LeaseContract.createLeaseContract(vehicle, customerName, customerEmail, date);
         }
         else
         {
