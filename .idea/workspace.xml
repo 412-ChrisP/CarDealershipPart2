@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="003d127f-cb80-476f-9460-530450315006" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/ContractFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/Dealership.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/DealershipFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/DealershipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/LeaseContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/SalesContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/UserInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Yearup/pluralsight/VehicleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NeighboorHoodLib/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NeighboorHoodLib/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NeighboorHoodLib/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NeighboorHoodLib/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnlineStore/src/main/java/YearUp/pluralsight/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnlineStore/src/main/java/YearUp/pluralsight/Store.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2oFi83mhGbzq6aGOiNInBJCITzR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/chrispham/Library/CloudStorage/OneDrive-YearUp-BOS/IntelliJ YearUp/Workshops/CarDealershipPart2/CarDealershipPart2/src/main/java/Yearup/pluralsight",
+    "onboarding.tips.debug.path": "/Users/chrispham/Library/CloudStorage/OneDrive-YearUp-BOS/IntelliJ YearUp/Workshops/CarDealershipPart2/CarDealershipPart2/src/main/java/Yearup/pluralsight/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Yearup/pluralsight" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="003d127f-cb80-476f-9460-530450315006" name="Changes" comment="" />
+      <created>1730471564814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730471564814</updated>
+    </task>
+    <servers />
+  </component>
+</project>
